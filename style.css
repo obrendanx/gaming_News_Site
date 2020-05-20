@@ -1,0 +1,54 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  height:1490px;
+}
+
+/* navigation bar styles */
+
+.header{
+  width:100vw;
+  height:325px;
+}
+
+.main_nav_links{
+  height:50px;
+}
+
+.sub_nav{
+  height:75px;
+  background:blue;
+}
+
+.banner{
+  height:200px;
+  background:pink;
+}
+
+.menu_button{
+  position:absolute;
+  right:0;
+  height:50px;
+  width:50px;
+  border:none;
+
+}
+
+.main_nav ul{
+  visibility:hidden;
+}
+
+/* navigation bar styles end */
+
+/* wrapper styles */
+
+.wrapper{
+  width:100%;
+  height:1165px;
+}
+
+/* wrapper styles end */
