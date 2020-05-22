@@ -39,9 +39,36 @@ body{
 }
 
 .main_nav ul{
-  visibility:hidden;
+  background:#40434E;
+  position:absolute;
+  right:0;
+  height:10vh;
+  width:40vw;
+  list-style-type:none;
 }
 
+.main_nav a{
+  color:#FFFFFA;
+  text-decoration:none;
+}
+
+.main_nav a:hover{
+  display:block;
+  width:100%;
+  background:#FFFFFA;
+  color:#40434E;
+}
+
+.main_nav li{
+  margin:5px;
+}
+
+.show{
+  visibility:visible;
+}
+.hide{
+  visibility:hidden;
+}
 /* navigation bar styles end */
 
 /* wrapper styles */
