@@ -38,37 +38,61 @@ body{
 
 }
 
-.main_nav ul{
+.main_ul{
   background:#40434E;
   position:absolute;
   right:0;
-  height:10vh;
+  height:220px;
   width:40vw;
+  padding:10px;
   list-style-type:none;
 }
 
-.main_nav a{
-  color:#FFFFFA;
+.main_ul a{
   text-decoration:none;
+  color:#FFFFFA;
+  display:block;
+  height:22.5px;
+  width:100%;
+  padding:2.5px;
+  transition:0.5s;
+  font-family: 'Press Start 2P', cursive;
+  font-size:2vw;
+  line-height:20px;
 }
 
 .main_nav a:hover{
-  display:block;
-  width:100%;
   background:#FFFFFA;
   color:#40434E;
 }
 
 .main_nav li{
-  margin:5px;
+  margin-top:5px;
 }
 
-.show{
-  visibility:visible;
+.lgn_btn{
+  border:none;
+  padding:5px;
+  font-family: 'Press Start 2P', cursive;
 }
-.hide{
-  visibility:hidden;
+
+/* creates dropdown */
+.sub_sub_link{
+  display:none !important;
 }
+
+.hov_link:hover .sub_sub_link{
+  display:block !important;
+}
+
+.scnd_ul{
+  list-style:none;
+}
+
+.lgn_link:hover{
+  background:none !important;
+}
+
 /* navigation bar styles end */
 
 /* wrapper styles */
