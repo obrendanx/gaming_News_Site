@@ -17,15 +17,16 @@ body{
 
 .main_nav_links{
   height:50px;
+  width:100vw;
 }
 
 .sub_nav{
-  height:75px;
+  height:50px;
   background:blue;
 }
 
 .banner{
-  height:200px;
+  height:225px;
   background:pink;
 }
 
@@ -35,7 +36,6 @@ body{
   height:50px;
   width:50px;
   border:none;
-
 }
 
 .main_ul{
@@ -76,13 +76,18 @@ body{
   font-family: 'Press Start 2P', cursive;
 }
 
+.break{
+  visibility:hidden;
+}
+
 /* creates dropdown */
 .sub_sub_link{
-  display:none !important;
+  opacity:0; !important;
 }
 
 .hov_link:hover .sub_sub_link{
-  display:block !important;
+  opacity:1; !important;
+  padding-left:30px;
 }
 
 .scnd_ul{
@@ -91,6 +96,22 @@ body{
 
 .lgn_link:hover{
   background:none !important;
+}
+
+/* menu button styles */
+.hide{
+  opacity:0;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+.show{
+  opacity:1;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
 }
 
 /* navigation bar styles end */
@@ -103,3 +124,163 @@ body{
 }
 
 /* wrapper styles end */
+
+
+/* responsive styles */
+
+@media only screen and (min-width: 600px) {
+  .menu_button{
+    display:none;
+  }
+
+  .main_ul{
+    top:0;
+    opacity:1 !important;
+    background:#FFFFFA;
+    height:50px;
+    width:29vw;
+  }
+
+  .main_ul a{
+    color:#40434E;
+    font-size:0.7vw;
+    display:block;
+    height:40px;
+  }
+
+  .main_ul a:hover{
+    border-bottom:solid 2px pink;
+    background:none;
+  }
+
+  .lgn_btn{
+    padding:7px;
+    color:#FFFFFA;
+    background:#40434E;
+  }
+
+  .hov_link:hover .sub_sub_link{
+    padding-left:10px;
+    color:#FFFFFA;
+    background:#40434E;
+    line-height:40px;
+  }
+
+  .scnd_ul li{
+    display:block !important;
+  }
+
+  .main_ul li{
+    display:inline-block;
+    margin:0;
+    margin-left:10px;
+  }
+
+  .break{
+    visibility:visible;
+  }
+
+  .fix{
+    position:relative;
+    bottom:120px;
+  }
+
+  .bord_none:hover{
+    border:none !important;
+  }
+}
+
+@media only screen and (min-width: 1450px){
+  .main_ul{
+    width:28vw;
+  }
+}
+
+@media only screen and (max-width: 1368px){
+  .main_ul{
+    width:35vw;
+  }
+}
+
+@media only screen and (max-width: 900px){
+  .main_ul{
+    width:43vw;
+  }
+}
+
+/* login button animation */
+.lgn_btn:hover .l{
+ animation-name:l;
+ animation-duration:5s;
+ animation-iteration-count: infinite;
+}
+
+@keyframes l{
+ 0% {color:red;}
+ 25% {color:blue;}
+ 50% {color:pink;}
+ 75%{color:orange;}
+ 100%{color:red;}
+}
+
+
+.lgn_btn:hover .o{
+animation-name:o;
+animation-duration:5s;
+animation-iteration-count: infinite;
+}
+
+@keyframes o{
+0% {color:blue;}
+25% {color:red;}
+50% {color:orange;}
+75%{color:pink;}
+100%{color:blue;}
+}
+
+
+.lgn_btn:hover .g{
+animation-name:g;
+animation-duration:5s;
+animation-iteration-count: infinite;
+}
+
+@keyframes g{
+0% {color:pink;}
+25% {color:green;}
+50% {color:purple;}
+75%{color:blue;}
+100%{color:pink;}
+}
+
+
+.lgn_btn:hover .i{
+animation-name:i;
+animation-duration:5s;
+animation-iteration-count: infinite;
+}
+
+@keyframes i{
+0% {color:purple;}
+25% {color:lightblue;}
+50% {color:yellow;}
+75%{color:brown;}
+100%{color:purple;}
+}
+
+
+
+.lgn_btn:hover .n{
+animation-name:n;
+animation-duration:5s;
+animation-iteration-count: infinite;
+}
+
+@keyframes n{
+0% {color:brown;}
+25% {color:lightgreen;}
+50% {color:blue;}
+75%{color:purple;}
+100%{color:brown;}
+}
+/* login anaimation finished */
