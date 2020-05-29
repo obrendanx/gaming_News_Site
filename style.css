@@ -6,6 +6,7 @@
 
 body{
   height:1490px;
+  overflow-x:hidden;
 }
 
 /* navigation bar styles */
@@ -22,7 +23,8 @@ body{
 
 .sub_nav{
   height:50px;
-  background:blue;
+  width:100%;
+  background:#40434E;
 }
 
 .banner{
@@ -114,6 +116,65 @@ body{
   transition: all 0.5s ease-in;
 }
 
+.sub_nav li{
+  display:inline-block;
+  margin-left:10px;
+  line-height:50px;
+}
+
+.sub_nav a{
+  color:#FFFFFA;
+  text-decoration:none;
+  font-size:1.2vw;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.sub_nav a:hover{
+  color:#912F40;
+}
+
+.sub_nav ul{
+  list-style:none;
+  text-align:center;
+}
+
+/* banner stlyes */
+
+.banner li{
+  display:inline-block;
+}
+
+.banner img{
+  position:relative;
+  animation-name:banner-show;
+  animation-duration:10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes banner-show{
+  0%{left:0px}
+  25%{left:-1200px}
+  50%{left:-1200px}
+  75%{left:-1200px}
+  100%{left:0px}
+}
+
+.banner ul{
+  width:5000px;
+}
+
+.red{
+  background:red;
+}
+.green{
+  background:green;
+}
+.blue{
+  background:blue;
+}
+.purple{
+  background:purple;
+}
 /* navigation bar styles end */
 
 /* wrapper styles */
@@ -149,7 +210,7 @@ body{
   }
 
   .main_ul a:hover{
-    border-bottom:solid 2px pink;
+    border-bottom:solid 2px #080705;
     background:none;
   }
 
@@ -157,6 +218,12 @@ body{
     padding:7px;
     color:#FFFFFA;
     background:#40434E;
+    position:absolute;
+    top:25px;
+  }
+
+  .lgn_link:hover{
+    border:none !important;
   }
 
   .hov_link:hover .sub_sub_link{
@@ -205,6 +272,18 @@ body{
 @media only screen and (max-width: 900px){
   .main_ul{
     width:43vw;
+  }
+}
+
+@media only screen and (min-width: 1200px){
+  .wrapper{
+    width:1200px;
+    margin:0 auto;
+  }
+
+  .banner{
+    width:1200px;
+    margin:0 auto;
   }
 }
 
