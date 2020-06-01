@@ -29,7 +29,6 @@ body{
 
 .banner{
   height:225px;
-  background:pink;
 }
 
 .menu_button{
@@ -84,11 +83,11 @@ body{
 
 /* creates dropdown */
 .sub_sub_link{
-  opacity:0; !important;
+  visibility:hidden !important;
 }
 
 .hov_link:hover .sub_sub_link{
-  opacity:1; !important;
+  visibility:visible !important;
   padding-left:30px;
 }
 
@@ -114,6 +113,7 @@ body{
   -moz-transition: all 0.5s ease-in;
   -o-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
+  z-index:2;
 }
 
 .sub_nav li{
@@ -147,15 +147,16 @@ body{
 .banner img{
   position:relative;
   animation-name:banner-show;
-  animation-duration:10s;
+  animation-duration:50s;
   animation-iteration-count: infinite;
+  width:100vw;
 }
 
 @keyframes banner-show{
   0%{left:0px}
-  25%{left:-1200px}
-  50%{left:-1200px}
-  75%{left:-1200px}
+  25%{left:-100%}
+  50%{left:-200%}
+  75%{left:-300%}
   100%{left:0px}
 }
 
@@ -204,7 +205,7 @@ body{
 
   .main_ul a{
     color:#40434E;
-    font-size:0.7vw;
+    font-size:0.7em;
     display:block;
     height:40px;
   }
@@ -255,24 +256,12 @@ body{
   .bord_none:hover{
     border:none !important;
   }
-}
 
-@media only screen and (min-width: 1450px){
-  .main_ul{
-    width:28vw;
-  }
-}
-
-@media only screen and (max-width: 1368px){
-  .main_ul{
-    width:35vw;
-  }
-}
-
-@media only screen and (max-width: 900px){
-  .main_ul{
-    width:43vw;
-  }
+  .header .main_ul{
+      display:block;
+      width:100%;
+      z-index:2;
+    }
 }
 
 @media only screen and (min-width: 1200px){
@@ -284,7 +273,32 @@ body{
   .banner{
     width:1200px;
     margin:0 auto;
+    overflow:hidden;
   }
+
+  .banner img{
+    width:1200px;
+  }
+
+  @keyframes banner-show{
+    0%{left:0px}
+    25%{left:-1200px}
+    50%{left:-2400px}
+    75%{left:-3600px}
+    100%{left:0px}
+  }
+
+  .header{
+    width:1200px;
+    margin:0 auto;
+  }
+
+  .main_nav_links{
+    width:1200px;
+    position:relative;
+    border-bottom:solid 2px grey;
+  }
+
 }
 
 /* login button animation */
