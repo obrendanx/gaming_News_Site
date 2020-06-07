@@ -84,16 +84,14 @@ body{
   height:40px;
   width:75px;
   color:#011627;
-  background:#d8d8d8;
+  background:#fff;
   border:none;
   border-radius:5px;
-  font-size:1.7vw;
+  font-size:1em;
   transition:1s;
   border-radius:5px;
-}
-
-.lgn_btn:hover{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index:2;
+  text-align:left;
 }
 
 .lgn_link{
@@ -111,19 +109,20 @@ body{
 
   .main_nav a{
     border:none;
-    background:blue;
-    width:100%;
+    width:125px;
     margin:0;
-    font-size:1vw;
+    font-size:0.8vw;
+    text-align:center;
+    padding:0 !important;
   }
 
   .sub_sub_link{
-    position:absolute;
-    padding-left:10px !important;
+    position:relative;
   }
 
   .main_nav li{
     float:left;
+    width:125px !important;
   }
 
   .sub_sub_link a{
@@ -146,5 +145,68 @@ body{
   .lgn_btn{
     position:absolute;
     right:0;
+    height:48px;
+    border-radius:0px;
+    font-size:1vw;
+    text-align:center;
   }
+
+  .lgn_btn:hover{
+    border-bottom:2px solid #F71735;
+  }
+
+  .main_nav a:hover{
+    border-bottom:solid 2px #F71735;
+  }
+
+  .scnd_ul{
+    display:none;
+  }
+
+  .hov_link:hover .scnd_ul{
+    display:block;
+  }
+
+  .hov_link:hover .banner{
+    height:200px;
+  }
+}
+
+/* banner stlyes */
+
+.banner li{
+  display:inline-block;
+}
+
+.banner img{
+  position:relative;
+  animation-name:banner-show;
+  animation-duration:50s;
+  animation-iteration-count: infinite;
+  width:100vw;
+}
+
+@keyframes banner-show{
+  0%{left:0px}
+  25%{left:-100%}
+  50%{left:-200%}
+  75%{left:-300%}
+  100%{left:0px}
+}
+
+.banner ul{
+  width:5000px;
+}
+
+.red{
+  background:red;
+}
+.green{
+  background:green;
+}
+.blue{
+  background:blue;
+}
+.purple{
+  background:purple;
 }
