@@ -14,7 +14,7 @@ body{
 
 .header{
   height:275px;
-  width:100%;
+  width:100vw;
 }
 
 .main_nav{
@@ -49,6 +49,7 @@ body{
   padding-left:10px;
   color:#011627;
   transition:0.5s;
+  z-index:3;
 }
 
 .main_nav a:visited a::before{
@@ -98,6 +99,46 @@ body{
   border:none !important;
 }
 
+/*banner styles*/
+.banner li{
+  display:inline-block;
+}
+
+.banner img{
+  position:relative;
+  animation-name:banner-show;
+  animation-duration:50s;
+  animation-iteration-count: infinite;
+  width:100vw;
+  height:94.5vh !important;
+}
+
+@keyframes banner-show{
+  0%{left:0px}
+  25%{left:-100%}
+  50%{left:-200%}
+  75%{left:-300%}
+  100%{left:0px}
+}
+
+.banner ul{
+  width:9000px;
+  position:absolute;
+}
+
+.red{
+  background:red;
+}
+.green{
+  background:green;
+}
+.blue{
+  background:blue;
+}
+.purple{
+  background:purple;
+}
+
 @media only screen and (min-width: 768px){
   .menu_button{
     display:none;
@@ -114,6 +155,7 @@ body{
     font-size:0.8vw;
     text-align:center;
     padding:0 !important;
+    background:#fff;
   }
 
   .sub_sub_link{
@@ -145,9 +187,9 @@ body{
   .lgn_btn{
     position:absolute;
     right:0;
-    height:48px;
+    height:50px;
     border-radius:0px;
-    font-size:1vw;
+    font-size:0.9vw;
     text-align:center;
   }
 
@@ -166,47 +208,4 @@ body{
   .hov_link:hover .scnd_ul{
     display:block;
   }
-
-  .hov_link:hover .banner{
-    height:200px;
-  }
-}
-
-/* banner stlyes */
-
-.banner li{
-  display:inline-block;
-}
-
-.banner img{
-  position:relative;
-  animation-name:banner-show;
-  animation-duration:50s;
-  animation-iteration-count: infinite;
-  width:100vw;
-}
-
-@keyframes banner-show{
-  0%{left:0px}
-  25%{left:-100%}
-  50%{left:-200%}
-  75%{left:-300%}
-  100%{left:0px}
-}
-
-.banner ul{
-  width:5000px;
-}
-
-.red{
-  background:red;
-}
-.green{
-  background:green;
-}
-.blue{
-  background:blue;
-}
-.purple{
-  background:purple;
 }
