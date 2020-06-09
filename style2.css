@@ -13,7 +13,7 @@ body{
 }
 
 .header{
-  height:275px;
+  height:100vh;
   width:100vw;
 }
 
@@ -110,7 +110,7 @@ body{
   animation-duration:50s;
   animation-iteration-count: infinite;
   width:100vw;
-  height:94.5vh !important;
+  height:95.2vh !important;
 }
 
 @keyframes banner-show{
@@ -127,17 +127,68 @@ body{
 }
 
 .red{
-  background:red;
+  background: url('');
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;
 }
 .green{
-  background:green;
+  background: url('');
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;
 }
 .blue{
-  background:blue;
+  background: url('');
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;
 }
 .purple{
-  background:purple;
+  background: url('');
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;
 }
+
+/*wrapper styles*/
+.story_one{
+  background-image: url('images/backgroundone.jpg');
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.game_segments{
+  background-image: url('images/backgroundtwo.jpg');
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.top_stories{
+  background-image: url('images/background3.jpg');
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.latest_news{
+  background-image: url('images/backgroundfour.jpg');
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
 
 @media only screen and (min-width: 768px){
   .menu_button{
