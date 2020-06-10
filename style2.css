@@ -188,7 +188,41 @@ body{
   background-size: cover;
 }
 
+.art1{
+  position:relative;
+  top:50%;
+  margin:0 auto;
+}
 
+.sec1_a1{
+  width:80%;
+  height:20vh;
+}
+
+.sec1_a1 p{
+
+}
+
+.sec1_a2{
+  width:80%;
+  height:50vh;
+}
+
+.art1 p{
+  height:15vh;
+  width:100%;
+  padding:20px;
+}
+
+.sec1_a2_img{
+  height:35vh;
+  padding-bottom:20px;
+}
+
+.sec_one{
+  position:absolute;
+  top:115%;
+}
 
 @media only screen and (min-width: 768px){
   .menu_button{
