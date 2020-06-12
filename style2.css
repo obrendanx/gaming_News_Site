@@ -6,6 +6,11 @@
 
 body{
   overflow-x:hidden;
+  width:100%;
+}
+
+html{
+  width:100%;
 }
 
 .menu_button{
@@ -14,7 +19,7 @@ body{
 
 .header{
   height:100vh;
-  width:100vw;
+  width:100%;
 }
 
 .main_nav{
@@ -262,6 +267,11 @@ body{
   opacity:1;
 }
 
+.image_info_art1 a{
+  text-decoration:none;
+  color:#fff;
+}
+
 @media only screen and (min-width: 768px){
   .menu_button{
     display:none;
@@ -338,12 +348,28 @@ body{
     position:relative;
     top:15%;
     display:block;
-    width:1200px;
+    width:900px;
     margin:0 auto;
+  }
+}
+
+@media only screen and (min-width: 1200px){
+  .sec_one{
+    width:1200px;
+    font-size:1.3em;
+    top:10%;
   }
 
   .sec1_a2_img{
-    height:40vh;
+    height:45vh;
+  }
+
+  .image_info_art1{
+    bottom:-40%;
+  }
+
+  .sec1_a2_img:hover .image_info_art1{
+    bottom:-30%;
   }
 }
 
