@@ -333,6 +333,60 @@ body{
   }
 }
 
-@media only screen and (min-width: 1200px){
-  
+@media only screen and (min-width: 900px){
+  .sec_one{
+    position:relative;
+    top:15%;
+    display:block;
+    width:1200px;
+    margin:0 auto;
+  }
+
+  .sec1_a2_img{
+    height:40vh;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  p{
+    font-size:0.7vw;
+  }
+}
+
+@media only screen and (max-width: 800px){
+  .story_one{
+    background-image: url('images/backgroundone.jpg');
+    height: 100vh;
+    background-attachment: local;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  .game_segments{
+    background-image: url('images/backgroundtwo.jpg');
+    height: 100vh;
+    background-attachment: local;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  .top_stories{
+    background-image: url('images/background3.jpg');
+    height: 100vh;
+    background-attachment: local;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  .latest_news{
+    background-image: url('images/backgroundfour.jpg');
+    height: 100vh;
+    background-attachment: local;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
 }
