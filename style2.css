@@ -240,7 +240,7 @@ html{
 
 .image_info_art1{
   position:absolute;
-  bottom:-25%;
+  bottom:5%;
   padding:10px;
   color:#fff;
   transition:.5s ease;
@@ -251,7 +251,7 @@ html{
 }
 
 .image_info_art1 p{
-  opacity:0;
+  display:none;
 }
 
 .sec1_a2_img:hover{
@@ -264,13 +264,39 @@ html{
 }
 
 .sec1_a2_img:hover .image_info_art1 p{
-  opacity:1;
+  display:block;
 }
 
 .image_info_art1 a{
   text-decoration:none;
   color:#fff;
 }
+
+/* sidebar styles */
+.sidebar_one{
+  position:absolute;
+  right:0;
+  height:60vh;
+  width:15vw;
+  background:pink;
+  top:120%;
+}
+
+.hide_side{
+  display:none;
+}
+
+/*game segments styles */
+.seg{
+  position:relative;
+  top:7.5%;
+  height:20vh;
+  width:100vw;
+  background:green;
+  margin-top:10px;
+  margin:auto 0;
+}
+
 
 @media only screen and (min-width: 768px){
   .menu_button{
@@ -341,6 +367,10 @@ html{
   .hov_link:hover .scnd_ul{
     display:block;
   }
+
+  .seg{
+    width:768px;
+  }
 }
 
 @media only screen and (min-width: 900px){
@@ -350,6 +380,10 @@ html{
     display:block;
     width:900px;
     margin:0 auto;
+  }
+
+  .seg{
+    width:900px;
   }
 }
 
@@ -365,11 +399,15 @@ html{
   }
 
   .image_info_art1{
-    bottom:-40%;
+    bottom:-15%;
   }
 
   .sec1_a2_img:hover .image_info_art1{
     bottom:-30%;
+  }
+
+  .hide_side{
+    display:none;
   }
 }
 
