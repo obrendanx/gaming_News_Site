@@ -6,11 +6,13 @@
 
 body{
   overflow-x:hidden;
-  width:100%;
+  width:100vw;
+  height:100vh;
 }
 
 html{
-  width:100%;
+  width:100vw;
+  height:100vh;
 }
 
 .menu_button{
@@ -169,10 +171,12 @@ html{
 .game_segments{
   background-image: url('images/backgroundtwo.jpg');
   height: 100vh;
+  width:100vw;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position:absolute;
 }
 
 .top_stories{
@@ -291,12 +295,19 @@ html{
   position:relative;
   top:7.5%;
   height:20vh;
-  width:100vw;
+  width:70%;
+  margin-left:15%;
   background:green;
-  margin-top:10px;
-  margin:auto 0;
+  margin-top:1vh;
+
 }
 
+.segs{
+  position:absolute;
+  top:7vh;
+  width:100%;
+  transform-style:preserve-3d;
+}
 
 @media only screen and (min-width: 768px){
   .menu_button{
@@ -367,10 +378,6 @@ html{
   .hov_link:hover .scnd_ul{
     display:block;
   }
-
-  .seg{
-    width:768px;
-  }
 }
 
 @media only screen and (min-width: 900px){
@@ -380,10 +387,6 @@ html{
     display:block;
     width:900px;
     margin:0 auto;
-  }
-
-  .seg{
-    width:900px;
   }
 }
 
@@ -399,7 +402,7 @@ html{
   }
 
   .image_info_art1{
-    bottom:-15%;
+    bottom:-10%;
   }
 
   .sec1_a2_img:hover .image_info_art1{
