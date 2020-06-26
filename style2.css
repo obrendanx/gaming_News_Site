@@ -294,20 +294,73 @@ html{
 .seg{
   position:relative;
   top:7.5%;
-  height:20vh;
-  width:70%;
-  margin-left:15%;
+  height:80vh;
+  width:20%;
   background:green;
   margin-top:1vh;
-
+  float:left;
 }
 
 .segs{
   position:absolute;
   top:7vh;
   width:100%;
-  transform-style:preserve-3d;
 }
+
+.one{
+  margin-left:7%;
+  transform-style: preserve-3d;
+  background:blue;
+}
+.one:hover{
+  z-index:2;
+}
+.two{
+  margin-left:1%;
+  margin-right:1%;
+  transform-style: preserve-3d;
+  background:pink;
+}
+.two:hover{
+  z-index:2;
+}
+.three{
+  margin-right:1%;
+  transform-style: preserve-3d;
+  background:yellow;
+}
+.three:hover{
+  z-index:2;
+}
+.four{
+  transform-style: preserve-3d;
+  background:orange;
+}
+.four:hover{
+  z-index:2;
+}
+
+.img-holder-one{
+  background: url('images/game-bg1.jpg') !important;
+  height:100%;
+  width:100%;
+}
+.img-holder-two{
+  background: url('images/game-bg2.jpg') !important;
+  height:100%;
+  width:100%;
+}
+.img-holder-three{
+  background: url('images/game-bg3.jpg') !important;
+  height:100%;
+  width:100%;
+}
+.img-holder-four{
+  background: url('images/game-bg4.jpg') !important;
+  height:100%;
+  width:100%;
+}
+
 
 @media only screen and (min-width: 768px){
   .menu_button{
