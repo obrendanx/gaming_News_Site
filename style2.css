@@ -433,6 +433,90 @@ html{
   }
 }
 
+.game-seg-title{
+  min-height:15%;
+  width:100%;
+  position:absolute;
+  bottom:0;
+  background:rgba(115, 115, 115, 0.5);
+  color:#fff;
+  font-size:2vw;
+  padding:5%;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.seg:hover .game-seg-title{
+  background:rgba(115, 115, 115, 1);
+}
+
+.seg:hover .psone{
+  background:rgb(204, 0, 204);
+}
+.psone{
+  background:rgba(204, 0, 204, 0.5);
+}
+.seg:hover .pstwo{
+  background:rgb(255, 153, 102);
+}
+.pstwo{
+  background:rgba(255, 153, 102, 0.5);
+}
+.seg:hover .psthree{
+  background:rgb(255, 51, 0);
+}
+.psthree{
+  background:rgba(255, 51, 0, 0,5);
+}
+.seg:hover .psfour{
+  background:rgb(102, 255, 102);
+}
+.psfour{
+  background:rgba(102, 255, 102, 0.5);
+}
+
+.main-section{
+  height:100%;
+  width:100%;
+  padding:3%;
+}
+
+.section-one{
+  height:55%;
+  width:100%;
+}
+
+.section-two{
+  height:40%;
+  width:100%;
+  margin-top:5%;
+}
+
+.pg-one{
+  height:100%;
+  width:55%;
+  background:purple;
+  float:left;
+}
+
+.pg-two{
+  height:100%;
+  width:40%;
+  background:pink;
+  margin-left:5%;
+  float:left;
+}
+
+.side{
+  width:23.5%;
+  height:100%;
+  background:pink;
+  float:left;
+}
+
+.side-two, .side-three, .side-four{
+  margin-left:2%;
+}
+
 @media only screen and (min-width: 900px){
   .sec_one{
     position:relative;
