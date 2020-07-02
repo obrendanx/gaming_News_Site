@@ -177,6 +177,9 @@ html{
   background-repeat: no-repeat;
   background-size: cover;
   position:absolute;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  overflow-y:hidden;
 }
 
 .top_stories{
@@ -301,9 +304,8 @@ html{
 
 .segs{
   margin-left:10%;
-  margin-top:20%;
-  width:300vw;
-  overflow-x:scroll;
+  margin-top:40%;
+  width:176vw;
 }
 
 .img-holder-one{
@@ -442,29 +444,9 @@ html{
     width:900px;
     margin:0 auto;
   }
-}
 
-@media only screen and (min-width: 1200px){
-  .sec_one{
-    width:1200px;
-    font-size:1.3em;
-    top:10%;
-  }
-
-  .sec1_a2_img{
-    height:45vh;
-  }
-
-  .image_info_art1{
-    bottom:-10%;
-  }
-
-  .sec1_a2_img:hover .image_info_art1{
-    bottom:-30%;
-  }
-
-  .hide_side{
-    display:none;
+  .game_segments{
+    overflow-x:hidden;
   }
 
   .game-seg-title{
@@ -529,6 +511,7 @@ html{
     width:20%;
     background:green;
     margin-top:1vh;
+    margin:0;
     float:left;
   }
 
@@ -536,6 +519,8 @@ html{
     position:absolute;
     top:7vh;
     width:100%;
+    margin-top:0;
+    margin-left:0;
   }
 
   .one{
@@ -586,6 +571,30 @@ html{
   .img-holder-four{
     height:100%;
     width:100%;
+  }
+}
+
+@media only screen and (min-width: 1200px){
+  .sec_one{
+    width:1200px;
+    font-size:1.3em;
+    top:10%;
+  }
+
+  .sec1_a2_img{
+    height:45vh;
+  }
+
+  .image_info_art1{
+    bottom:-10%;
+  }
+
+  .sec1_a2_img:hover .image_info_art1{
+    bottom:-30%;
+  }
+
+  .hide_side{
+    display:none;
   }
 }
 
