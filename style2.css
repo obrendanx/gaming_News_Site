@@ -7,12 +7,12 @@
 body{
   overflow-x:hidden;
   width:100vw;
-  height:100vh;
+  height:500vh;
 }
 
 html{
   width:100vw;
-  height:100vh;
+  height:500vh;
 }
 
 .menu_button{
@@ -20,7 +20,7 @@ html{
 }
 
 .header{
-  height:100vh;
+  min-height:100vh;
   width:100%;
 }
 
@@ -58,6 +58,8 @@ html{
   transition:0.5s;
   z-index:3;
   font-family: 'Open Sans Condensed', sans-serif;
+  text-transform:uppercase;
+  font-weight:bold;
 }
 
 .main_nav a:visited a::before{
@@ -162,9 +164,9 @@ html{
 /*wrapper styles*/
 .story_one{
   background-image: url('images/backgroundone.jpg');
-  height: 100vh;
+  height: 200vh;
   background-attachment: fixed;
-  background-position: center;
+  background-position:center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -177,10 +179,10 @@ html{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position:absolute;
   overflow-x: scroll;
   -webkit-overflow-scrolling: touch;
   overflow-y:hidden;
+  position:relative;
 }
 
 .top_stories{
@@ -306,7 +308,7 @@ html{
 
 .segs{
   margin-left:10%;
-  margin-top:50%;
+  margin-top:25vh;
   width:218vw;
 }
 
@@ -375,6 +377,72 @@ html{
 .seg:hover .ps{
   text-decoration:underline;
 }
+
+/*story one styles */
+.main-section{
+  min-height:100%;
+  width:100%;
+  padding:0% 3% 3% 3%;
+}
+
+.section-one{
+  height:100vh;
+  width:100%;
+}
+
+.section-two{
+  height:100vh;
+  width:100%;
+  margin-top:1%;
+}
+
+.pg-one{
+  height:45vh;
+  width:100%;
+  background:pink;
+}
+
+.pg-two{
+  height:45vh;
+  width:100%;
+  background: url("https://gamespot1.cbsistatic.com/uploads/square_medium/1579/15794034/3695505-halo%203.jpg") !important;
+  margin-top:5%;
+  float:right;
+}
+
+.side{
+  width:47%;
+  height:45%;
+  background:pink;
+  float:left;
+  margin-bottom:2%;
+}
+
+.side-one{
+  margin-left:2%;
+  background: url("https://gamespot1.cbsistatic.com/uploads/screen_small/1595/15950357/3694401-super%20mario%20maker%202%20thumb.jpg") !important;
+  /*mario*/
+}
+
+.side-two, .side-three, .side-four{
+  margin-left:2%;
+}
+
+.side-two{
+  background: url('https://assets1.ignimgs.com/2020/07/13/bad-batch-deck-1594661066888.jpg?fit=crop&width=282&height=470') !important;
+  /*star wars new disney+ show*/
+}
+
+.side-three{
+  background: url('https://assets1.ignimgs.com/2020/07/14/ghostoftsushima-deck-993300-1594735339799.jpg?fit=crop&width=282&height=470') !important;
+  /*ghost of tsuminia*/
+}
+
+.side-four{
+  background: url('https://assets1.ignimgs.com/2020/07/13/lootboxaddiction-deck-cc3300-1594665669104.jpg?fit=crop&width=282&height=470') !important;
+  /*lootboxes*/
+}
+
 
 @media only screen and (min-width: 768px){
   .menu_button{
@@ -481,6 +549,7 @@ html{
   .section-one{
     height:55%;
     width:100%;
+    margin-top:3%;
   }
 
   .section-two{
@@ -502,13 +571,18 @@ html{
     background:pink;
     margin-left:5%;
     float:left;
+    margin-top:0;
   }
 
   .side{
     width:23.5%;
-    height:100%;
+    height:80%;
     background:pink;
     float:left;
+  }
+
+  .side-one{
+    margin-left:0;
   }
 
   .side-two, .side-three, .side-four{
@@ -596,6 +670,10 @@ html{
   .psfour{
     background:rgba(102, 255, 102, 0.5);
   }
+
+  .story_one{
+    height:100vh;
+  }
 }
 
 @media only screen and (min-width: 1200px){
@@ -663,5 +741,25 @@ html{
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto;
+  }
+}
+
+/*padding for main-section*/
+/*moto,pixel,samsung*/
+@media only screen and (max-width: 639px){
+  .section-one{
+    padding-top:6%;
+  }
+}
+/*iphone 5s/se*/
+@media only screen and (max-width: 567px){
+  .section-one{
+    padding-top:10%;
+  }
+}
+/*iphone x + above*/
+@media only screen and (min-width: 811px){
+  .section-one{
+    padding-top:6%;
   }
 }
