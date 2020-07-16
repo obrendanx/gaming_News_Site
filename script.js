@@ -39,3 +39,13 @@ function dropdown(){
 };
 
 //div tilt
+
+
+$(document).ready(function() {
+    var cyber = document.getElementByClassName('blue');
+    var ffseven = document.getElementByClassName('green');
+     if($(window).width() > 768) {
+         $(cyber).attr("src", "images/cyberpunk.jpg");
+         $(ffseven).attr("src", "images/ffseven.jpg");
+     }
+});

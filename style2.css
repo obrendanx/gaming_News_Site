@@ -162,12 +162,13 @@ html{
 }
 
 /*wrapper styles*/
+/* styles for theses at bottom for 800px media query*/
 .story_one{
   background-image: url('images/backgroundone.jpg');
   height: 200vh;
   background-attachment: fixed;
   background-position:center;
-  background-repeat: no-repeat;
+  background-repeat:no-repeat;
   background-size: cover;
 }
 
@@ -313,22 +314,34 @@ html{
 }
 
 .img-holder-one{
-  background: url('images/game-bg1.jpg') !important;
+  background: url('images/ingame-one-slide.jpg') !important;
+  background-position:center !important;
+  background-repeat:no-repeat !important;
+  background-size:cover !important;
   height:100%;
   width:100%;
 }
 .img-holder-two{
-  background: url('images/game-bg2.jpg') !important;
+  background: url('images/ingame-two-slide.jpg') !important;
+  background-position:center !important;
+  background-repeat:no-repeat !important;
+  background-size:cover !important;
   height:100%;
   width:100%;
 }
 .img-holder-three{
-  background: url('images/game-bg3.jpg') !important;
+  background: url('images/ingame-three-slide.jpg') !important;
+  background-position:center !important;
+  background-repeat:no-repeat !important;
+  background-size:cover !important;
   height:100%;
   width:100%;
 }
 .img-holder-four{
-  background: url('images/game-bg4.jpg') !important;
+  background: url('images/ingame-four-slide.jpg') !important;
+  background-position:center !important;
+  background-repeat:no-repeat !important;
+  background-size:cover !important;
   height:100%;
   width:100%;
 }
@@ -406,6 +419,9 @@ html{
   height:45vh;
   width:100%;
   background: url("https://gamespot1.cbsistatic.com/uploads/square_medium/1579/15794034/3695505-halo%203.jpg") !important;
+  background-position:center !important;
+  background-repeat:no-repeat !important;
+  background-size:cover !important;
   margin-top:5%;
   float:right;
 }
@@ -420,7 +436,10 @@ html{
 
 .side-one{
   margin-left:2%;
-  background: url("https://gamespot1.cbsistatic.com/uploads/screen_small/1595/15950357/3694401-super%20mario%20maker%202%20thumb.jpg") !important;
+  background: url("images/sides/mario.jpg") !important;
+  background-position:center !important;
+  background-size:cover !important;
+  background-repeat:no-repeat !important;
   /*mario*/
 }
 
@@ -429,17 +448,26 @@ html{
 }
 
 .side-two{
-  background: url('https://assets1.ignimgs.com/2020/07/13/bad-batch-deck-1594661066888.jpg?fit=crop&width=282&height=470') !important;
+  background: url('images/sides/starwars.jpg') !important;
+  background-position:center !important;
+  background-size:cover !important;
+  background-repeat:no-repeat !important;
   /*star wars new disney+ show*/
 }
 
 .side-three{
-  background: url('https://assets1.ignimgs.com/2020/07/14/ghostoftsushima-deck-993300-1594735339799.jpg?fit=crop&width=282&height=470') !important;
+  background: url('images/sides/ghost-small.png') !important;
+  background-position:center !important;
+  background-size:cover !important;
+  background-repeat:no-repeat !important;
   /*ghost of tsuminia*/
 }
 
 .side-four{
-  background: url('https://assets1.ignimgs.com/2020/07/13/lootboxaddiction-deck-cc3300-1594665669104.jpg?fit=crop&width=282&height=470') !important;
+  background: url('images/sides/lootbox-small.png') !important;
+  background-position:center !important;
+  background-size:cover !important;
+  background-repeat:no-repeat !important;
   /*lootboxes*/
 }
 
@@ -709,16 +737,16 @@ html{
 @media only screen and (max-width: 800px){
   .story_one{
     background-image: url('images/backgroundone.jpg');
-    height: 100vh;
+    height: 200vh;
     background-attachment: local;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
   }
 
   .game_segments{
     background-image: url('images/backgroundtwo.jpg');
-    height: 100vh;
+    height:100vh;
     background-attachment: local;
     background-position: center;
     background-repeat: no-repeat;
