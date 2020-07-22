@@ -406,45 +406,53 @@ html{
 .section-two{
   height:100vh;
   width:100%;
-  margin-top:1%;
 }
 
 .pg-one{
   height:45vh;
   width:100%;
-  background:pink;
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ), url("images/pokemon-sword.jpg") !important;
+  background-position:center !important;
+  background-repeat:no-repeat !important;
+  background-size:cover !important;
+  position:relative;
 }
 
 .pg-two{
   height:45vh;
   width:100%;
-  background: url("https://gamespot1.cbsistatic.com/uploads/square_medium/1579/15794034/3695505-halo%203.jpg") !important;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+  ), url("https://gamespot1.cbsistatic.com/uploads/square_medium/1579/15794034/3695505-halo%203.jpg") !important;
   background-position:center !important;
   background-repeat:no-repeat !important;
   background-size:cover !important;
   margin-top:5%;
   float:right;
+  position:relative;
 }
 
 .side{
   width:47%;
   height:45%;
-  background:pink;
   float:left;
-  margin-bottom:2%;
+  margin-top:5%;
+
 }
 
 .side-one{
-  margin-left:2%;
   background: url("images/sides/mario.jpg") !important;
   background-position:center !important;
   background-size:cover !important;
   background-repeat:no-repeat !important;
+  height:50%;
+  width:100%;
   /*mario*/
-}
-
-.side-two, .side-three, .side-four{
-  margin-left:2%;
 }
 
 .side-two{
@@ -452,6 +460,8 @@ html{
   background-position:center !important;
   background-size:cover !important;
   background-repeat:no-repeat !important;
+  height:50%;
+  width:100%;
   /*star wars new disney+ show*/
 }
 
@@ -460,6 +470,8 @@ html{
   background-position:center !important;
   background-size:cover !important;
   background-repeat:no-repeat !important;
+  height:50%;
+  width:100%;
   /*ghost of tsuminia*/
 }
 
@@ -468,9 +480,85 @@ html{
   background-position:center !important;
   background-size:cover !important;
   background-repeat:no-repeat !important;
+  height:50%;
+  width:100%;
   /*lootboxes*/
 }
 
+.s-two, .s-four{
+  margin-left:5.5%;
+}
+
+.show_div_pg{
+  display:none;
+  color:#fff;
+  padding:3%;
+  position:absolute;
+  bottom:0;
+  transition:1s;
+}
+
+.pg h2{
+  padding:3%;
+  font-size:2em;
+  color:#fff;
+  position:absolute;
+  bottom:0;
+  transition:1s;
+}
+
+.info-side{
+  padding:5%;
+  margin:auto 0;
+  font-size:1.05em;
+  font-weight:bold;
+  color:#fff;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.pg:hover .show_div_pg{
+  display:block;
+}
+
+.pg-two:hover h2{
+  bottom:20%;
+}
+
+.pg-one:hover h2{
+  bottom:20%;
+}
+
+.pg-two:hover{
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2)
+  ), url("https://gamespot1.cbsistatic.com/uploads/square_medium/1579/15794034/3695505-halo%203.jpg") !important;
+  background-position:center !important;
+  background-repeat:no-repeat !important;
+  background-size:cover !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.pg-one:hover{
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ), url("images/pokemon-sword.jpg") !important;
+  background-position:center !important;
+  background-repeat:no-repeat !important;
+  background-size:cover !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.side:hover .bg-side{
+  opacity:0.8;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.side:hover .info-side{
+  color:#DC143C;
+}
 
 @media only screen and (min-width: 768px){
   .menu_button{
@@ -571,17 +659,17 @@ html{
   .main-section{
     height:100%;
     width:100%;
-    padding:3%;
+    padding:0 3% 3% 3%;
   }
 
   .section-one{
     height:55%;
     width:100%;
-    margin-top:3%;
+    margin-top:0%;
   }
 
   .section-two{
-    height:40%;
+    height:35%;
     width:100%;
     margin-top:5%;
   }
@@ -603,18 +691,18 @@ html{
   }
 
   .side{
+    height:210%;
     width:23.5%;
-    height:80%;
-    background:pink;
     float:left;
+    margin-right:1%;
   }
 
-  .side-one{
-    margin-left:0;
+  .info-side{
+    font-size:1.25vw;
   }
 
-  .side-two, .side-three, .side-four{
-    margin-left:2%;
+  .s-two, .s-four, .s-one{
+    margin-left:1%;
   }
   /*game segments styles */
   .seg{
