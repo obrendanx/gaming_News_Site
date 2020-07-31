@@ -187,7 +187,10 @@ html{
 }
 
 .top_stories{
-  background-image: url('images/background3.jpg');
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2)
+  ), url('images/background3.jpg');
   min-height: 100vh;
   background-attachment: fixed;
   background-position: center;
@@ -514,7 +517,7 @@ html{
   font-size:1.05em;
   font-weight:bold;
   color:#fff;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Teko', sans-serif;
 }
 
 .pg:hover .show_div_pg{
@@ -569,8 +572,18 @@ html{
   margin-left:10vw;
   margin-top:6vh;
   position:relative;
-  border-bottom:solid 1px #000;
+  border-bottom:1px solid #e6e6e6;
   line-height:35px;
+  font-family: 'Teko', sans-serif;
+  color:#fff;
+  margin-bottom:-3%;
+}
+
+.art:hover h2{
+  color:#e62e00;
+}
+.art h2{
+
 }
 
 .art h3{
@@ -588,11 +601,19 @@ html{
 .art_img{
   background:white;
   height:100px;
-  width:40%;
+  width:30%;
   margin-left:1%;
   position:absolute;
   right:0;
   bottom:20%;
+}
+
+.art:hover .art_img{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.stories{
+  margin-bottom:4%;
 }
 
 @media only screen and (min-width: 768px){
@@ -913,4 +934,12 @@ html{
   .section-one{
     padding-top:6%;
   }
+}
+
+/*images*/
+.story_img_two{
+  background: url("images/story-image-one.png") !important;
+  background-position:center !important;
+  background-repeat:no-repeat !important;
+  background-size:cover !important;
 }
