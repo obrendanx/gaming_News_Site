@@ -57,7 +57,7 @@ html{
   color:#011627;
   transition:0.5s;
   z-index:3;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Teko', sans-serif;
   text-transform:uppercase;
   font-weight:bold;
 }
@@ -98,11 +98,12 @@ html{
   background:#fff;
   border:none;
   border-radius:5px;
-  font-size:1em;
+  font-size:1.5em;
   transition:1s;
   border-radius:5px;
   z-index:2;
   text-align:left;
+  font-family: 'Teko', sans-serif;
 }
 
 .lgn_link{
@@ -577,13 +578,15 @@ html{
   font-family: 'Teko', sans-serif;
   color:#fff;
   margin-bottom:-3%;
+  overflow-y:hidden;
 }
 
 .art:hover h2{
   color:#e62e00;
 }
-.art h2{
 
+.art h2{
+  font-size:1.3em;
 }
 
 .art h3{
@@ -607,6 +610,7 @@ html{
   right:0;
   bottom:20%;
 }
+
 
 .art:hover .art_img{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -898,12 +902,15 @@ html{
   }
 
   .top_stories{
-    background-image: url('images/background3.jpg');
-    height: 100vh;
+    background-image:linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ), url('images/background3.jpg');
+    min-height:100vh;
     background-attachment: local;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
   }
 
   .latest_news{

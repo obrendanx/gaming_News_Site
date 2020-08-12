@@ -49,3 +49,12 @@ $(document).ready(function() {
          $(ffseven).attr("src", "images/ffseven.jpg");
      }
 });
+
+function getTime(){
+  var posted = new Date();
+  var date = posted.getFullYear()+'-'+(posted.getMonth()+1)+'-'+posted.getDate()+" "+posted.getTime();
+  return date;
+};
+
+artOnePosted = getime();
+console.log(artOnePosted);
