@@ -7,12 +7,12 @@
 body{
   overflow-x:hidden;
   width:100vw;
-  height:500vh;
+  min-height:400vh;
 }
 
 html{
   width:100vw;
-  height:500vh;
+  min-height:400vh;
 }
 
 .menu_button{
@@ -60,6 +60,7 @@ html{
   font-family: 'Teko', sans-serif;
   text-transform:uppercase;
   font-weight:bold;
+  font-size:1rem;
 }
 
 .main_nav a:visited a::before{
@@ -98,7 +99,7 @@ html{
   background:#fff;
   border:none;
   border-radius:5px;
-  font-size:1.5em;
+  font-size:1rem;
   transition:1s;
   border-radius:5px;
   z-index:2;
@@ -620,6 +621,10 @@ html{
   margin-bottom:4%;
 }
 
+.fa-color{
+  color:blue;
+}
+
 @media only screen and (min-width: 768px){
   .menu_button{
     display:none;
@@ -633,7 +638,6 @@ html{
     border:none;
     width:125px;
     margin:0;
-    font-size:0.8vw;
     text-align:center;
     padding:0 !important;
     background:#fff;
@@ -670,7 +674,6 @@ html{
     right:0;
     height:50px;
     border-radius:0px;
-    font-size:0.9vw;
     text-align:center;
   }
 

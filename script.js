@@ -50,11 +50,23 @@ $(document).ready(function() {
      }
 });
 
-function getTime(){
-  var posted = new Date();
-  var date = posted.getFullYear()+'-'+(posted.getMonth()+1)+'-'+posted.getDate()+" "+posted.getTime();
-  return date;
-};
+function likevideo(elem) {
+var one = document.getElementById("fa-thumbs-one");
+var two = document.getElementById("fa-thumbs-two");
+var three = document.getElementById("fa-thumbs-three");
+var four = document.getElementById("fa-thumbs-four");
+var five = document.getElementById("fa-thumbs-five");
+var six = document.getElementById("fa-thumbs-six");
+var seven = document.getElementById("fa-thumbs-seven");
+var eight = document.getElementById("fa-thumbs-eight");
+var nine = document.getElementById("fa-thumbs-nine");
+var ten = document.getElementById("fa-thumbs-ten");
+var eleven = document.getElementById("fa-thumbs-eleven");
 
-artOnePosted = getime();
-console.log(artOnePosted);
+var button_name = elem.className;
+  if(button_name.className = "a_one"){
+    one.classList.add("fa-color");
+  }else if(button_name.className = "a_two"){
+    one.classList.add("fa-color");
+  }
+}
