@@ -63,27 +63,29 @@ function likevideo(elem) {
   var ten = document.getElementById("fa-thumbs-ten");
   var eleven = document.getElementById("fa-thumbs-eleven");
 
+  //although if statement not needed when adding liek button functionality i will need if statements later
+
   if(elem == "fa-thumbs-one"){
-    one.classList.add("fa-color");
+    $( "#fa-thumbs-one" ).toggleClass("fa-color");
   }else if(elem == "fa-thumbs-two"){
-    two.classList.add("fa-color");
+    $( "#fa-thumbs-two" ).toggleClass("fa-color");
   }else if(elem == "fa-thumbs-three"){
-    three.classList.add("fa-color");
+    $( "#fa-thumbs-three" ).toggleClass("fa-color");
   }else if(elem == "fa-thumbs-four"){
-    four.classList.add("fa-color");
+    $( "#fa-thumbs-four" ).toggleClass("fa-color");
   }else if(elem == "fa-thumbs-five"){
-    five.classList.add("fa-color");
+    $( "#fa-thumbs-five" ).toggleClass("fa-color");
   }else if(elem == "fa-thumbs-six"){
-    six.classList.add("fa-color");
+    $( "#fa-thumbs-six" ).toggleClass("fa-color");
   }else if(elem == "fa-thumbs-seven"){
-    seven.classList.add("fa-color");
+    $( "#fa-thumbs-seven" ).toggleClass("fa-color");
   }else if(elem == "fa-thumbs-eight"){
-    eight.classList.add("fa-color");
+    $( "#fa-thumbs-eight" ).toggleClass("fa-color");
   }else if(elem == "fa-thumbs-nine"){
-    nine.classList.add("fa-color");
+    $( "#fa-thumbs-nine" ).toggleClass("fa-color");
   }else if(elem == "fa-thumbs-ten"){
-    ten.classList.add("fa-color");
+    $( "#fa-thumbs-ten" ).toggleClass("fa-color");
   }else if(elem == "fa-thumbs-eleven"){
-    eleven.classList.add("fa-color");
+    $( "#fa-thumbs-eleven" ).toggleClass("fa-color");
   }
 }
